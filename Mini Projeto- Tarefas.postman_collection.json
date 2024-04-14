@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "12c2a9c1-dc51-470c-8864-cefc645a734d",
+		"name": "Mini Projeto: Tarefas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33962121"
+	},
+	"item": [
+		{
+			"name": "Listar Tarefas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/tarefas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Tarefa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Dentista\",\n    \"descricao\": \"Endereço e horário\",\n    \"dataConclusao\": \"2024-04-16\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/tarefas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Tarefa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Projeto\",\n    \"descricao\": \"abc\",\n    \"dataConclusao\": \"2024-04-15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/tarefas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tarefas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Tarefa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/tarefas/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tarefas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
